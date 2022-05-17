@@ -1,0 +1,1108 @@
+<html>
+  
+  <head>   
+    <meta charset="utf-8">
+    <title>KiyevFoodMarket</title>
+    <meta http-equiv="content-language"content="en-GB">
+    <meta name="description" content="text">
+    <meta name="author" content="Pahomch1k">
+	<script>
+	function OTZ1()
+{
+      document.getElementById("ostavotz").className="invis";
+      document.getElementById("chet").className="vis";
+      document.getElementById("itemotz").className="vis";
+      document.getElementById("itemNameotz").className="vis";
+}
+
+function OTZ2()
+{myName=document.fname.itemName.value;
+ myOtz=document.fname.itemotz1.value;
+  if(myName=="")
+    {
+      alert("Введите имя");
+    }
+ else if (myOtz=="")
+   {
+     alert("Напишите отзыв");
+   }
+ else
+ {
+  alert("Спасибо! Ваш отзыв будет на сайте весь день. Его увидят все пользователи.");
+      document.getElementById("chet").className="invis";
+      document.getElementById("itemotz").className="invis";
+      document.getElementById("itemNameotz").className="invis";
+      document.getElementById("divspas").className="vis";
+      document.getElementById("divspasp").className="vis";
+      document.getElementById("divspasp1").className="vis";
+   document.getElementById("divspasp").innerHTML=myName;
+    document.getElementById("divspasp1").innerHTML=myOtz;
+}
+}
+
+	</script>
+	
+	<style>
+	#header { position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 650px; 
+  background-image: url(https://rau.ua/wp-content/uploads/2020/09/000-1.jpg);}
+
+
+/* НАЧАЛО ХЕДДЕР -----------------------------------------------------------------------------*/
+
+.dd { position: absolute;
+  background: #808080;
+  height: 100px;
+  width: 1920px;
+  top: 0px;
+  left: 0px;}
+
+.img_glavnaya {position: absolute;
+  width: 100px;
+  left: 540px;
+  top: 5px;}
+
+.img_korzina {position: absolute;
+  width: 50px;
+  left: 1740px;
+  top: 25px;}
+
+
+/* КНОПКИ ХЕДДЕР -----------------------------------------------------------------------------*/
+
+.button {position: absolute;
+  font-size: 25px;
+  top: 25px;
+  font-family: 'Neucha', cursive;}
+
+#button1 {left: 675px;
+  padding-right: 15px;
+  background: none;}
+
+#button2 {left: 880px;}  
+
+#button4 {left: 1180px;}
+
+#button3 {left: 1060px;
+  padding-right: 15px;} 
+
+.anim1 a {color: black;
+  text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;}
+
+a {color: black;
+  text-decoration: none;}
+
+
+/* АНИМАЦИЯ КНОПКИ ХЕДДЕР -----------------------------------------------------------------------------*/
+
+.anim1 a:hover {background-color: #ddd;
+  color: black;}
+
+#button1:hover {ransition-property: height, width, background-color, opacity;
+transition-duration: 1s, 2s;
+  width: 175.4px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+#button2:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s;
+  width: 162px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+#button3:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 90px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+#button4:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 154px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+/* КОНЕЦ ХЕДДЕР -----------------------------------------------------------------------------*/
+
+
+/* НАЧАЛО МЕНЮ БЛОКИ -----------------------------------------------------------------------------*/
+
+/* СТРЕЛКА НАВЕРХ -----------------------------------------------------------------------------*/
+#strelka_img {position: fixed;
+  width: 50px;
+  top: 850px;
+  left: 1800px;
+  border-radius:10px;}
+
+/* МЕНЮ БЛОКИ -----------------------------------------------------------------------------*/
+.bodyept {position:absolute;
+  width: 1920px;
+  height:800px;
+  top:100px;
+  left:0px;}
+
+#pizza {top: 663px; 
+  left: 8px; 
+  top: 560px;}  
+
+#grill {top: 866px;
+  left: 8px;
+  top: 769px;}
+
+#pishka {top: 1069px;
+  left: 8px;
+  top: 978px;}
+
+#bar {top: 1272px;
+  left: 8px;
+  top: 1187px;}
+
+#burger {top: 663px;
+  left: 643px;
+  top: 560px;}
+
+#vegano {top: 866px;
+  left: 643px;
+  top: 769px;} 
+
+#svegak {top: 1272px;
+  left: 643px;
+  top: 1187px;}
+
+#taco {top: 1069px;
+  left: 643px;
+  top: 978px;}
+
+#chernomorka{top: 663px;
+  left: 1279px;
+  top: 560px;}
+
+#hot_dogs {top: 866px;
+  left: 1279px;
+  top: 769px;}
+
+#Rolli {top: 1069px;
+  left: 1279px;
+  top: 978px;}
+
+
+/* ФОТО МЕНЮ БЛОКИ -----------------------------------------------------------------------------*/
+.edaimg {width: 270px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 180px;}
+
+/* ТЕКСТ МЕНЮ БЛОКИ -----------------------------------------------------------------------------*/
+.text1 {margin-left: 300px;
+  font-size: 25px;
+  margin-top: -160px;} 
+
+.text2 {width: 300px;
+  margin-left: 300px;
+  margin-top: 40px;}
+
+
+/* АНИМАЦИЯ МЕНЮ БЛОКИ -----------------------------------------------------------------------------*/
+.hover1 {position: absolute;
+  width: 627px;
+  height: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+
+.hover1:hover {transition-property: font-size opacity background margin-top;
+  transition-duration:0.0001s, 0.0001s;
+  transition-delay: 0.5s, 0.5s;
+  transition-timing-function: ease-in,ease-in;
+  font-size: 20px;
+  opacity: 0.95;
+  background: #FF6347;}
+
+/* КОНЕЦ МЕНЮ БЛОКИ -----------------------------------------------------------------------------*/
+
+
+/* НАЧАЛО ОПИСАНИЕ РЫНКА ЕДЫ -----------------------------------------------------------------------------*/
+
+.opisanie {position: absolute;
+  width: 1920px;
+  height: 450px;
+  background-color: #FFFFE0;
+  margin-top: -30px;
+  top: 1530px;
+  left: 0px;}
+
+.opisanie_text {width: 450px;
+  height: 300px;
+  margin-left: 20%;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 140px;}
+
+.img1 {position: absolute;
+  width: 300px;
+  left: 950px;
+  top: 20px;
+  height: 400px;}
+
+.img2 {position: absolute;
+  width: 300px;
+  height: 400px;
+  left: 1280px;
+  top: 20px;}
+
+.opisanie_text1 {position: absolute;
+  width: 500px;
+  height: 30px;
+  margin-left: 380px;
+  font-style: italic;
+  font-size: 50px;
+  top:40px;}
+
+/* КОНЕЦ ОПИСАНИЕ РЫНКА ЕДЫ -------------------------------------------------------------------------*/
+
+
+/* НАЧАЛО ОТЗЫВЫ -----------------------------------------------------------------------------*/
+
+.otzivi {position:absolute;
+  top:2100px;
+  left:0px;}
+
+.otzivii {position:absolute;
+  height: 100px;
+  font-style:italic;
+  font-size:30px;
+  margin-top:30px;
+  top:-150px;
+  left:750px;}
+
+/* ТЕКСТ ОТЗЫВЫ -----------------------------------------------------------------------------*/
+#otzivi1_text {margin-left:370px;}
+
+#otzivi2_text {margin-left:830px;
+  height:240px;}
+
+#otzivi3_text {margin-left:1280px;
+  height:240px;}
+
+.otzivi10_text {width: 300px;}
+
+/* ИМЯ ОТЗЫВЫ -----------------------------------------------------------------------------*/
+.imya1 {height: 30px;
+  margin-left: 370px;
+  margin-top: 20px;
+  font-size: 20px;}
+
+.imya2 {height: 30px;
+  margin-left: 830px;
+  margin-top: -190px;
+  font-size: 20px;}
+
+.imya3 {height: 30px;
+  margin-left: 1280px;
+  margin-top: -270px;
+  font-size: 20px;}
+
+/* КОВЫЧКИ ОТЗЫВЫ -----------------------------------------------------------------------------*/
+.kovichki {position: absolute;
+  width:50px;
+  height:50px;
+  top:-50px;
+  left:0px;}
+
+#img3 {left: 370px;}
+#img4 {left: 830px;} 
+#img5 {left: 1280px;}
+
+#ostavotz {position: absolute;
+  top: 2050px;
+  right: 50px;
+  border-radius: 10px;
+  height: 40px;
+  background-color:#5cf24b;
+  font-style:italic;
+}
+
+#itemNameotz {position: absolute;
+  top: 2050px;
+  right: 35px;
+  border-radius: 10px;
+  height: 20px;
+  width: 150px;
+}
+#itemotz{position: absolute;
+  top: 2080px;
+  right: 35px;
+  border-radius: 10px;
+  height: 80px;
+  width:150px;
+}
+
+#chet{position: absolute;
+  top: 2180px;
+  right: 35px;
+  border-radius: 10px;
+  height: 30px;
+  width:160px;
+  background-color:#5cf24b;
+  font-style:italic;
+}
+
+#divspas{position: absolute;
+  top: 1970px;
+  right: 30px;
+  border-radius: 10px;
+  border:1px solid;
+  width:260px;
+  background-color:#FFFACD;
+  font-style:italic;
+}
+#divspasp{font-size:20px;
+text-align:center;}
+#divspasp1{text-align:center;}
+
+.vis {display: block;}
+.invis{display: none;}
+
+/* КОНЕЦ ОТЗЫВЫ -----------------------------------------------------------------------------*/
+
+
+/* НАЧАЛО ФУТТЕР РЫНКА ЕДЫ-----------------------------------------------------------------------------*/
+
+.foot1 {position: absolute;
+  height: 250px;
+  width: 1920px;
+  background-color: #000000;
+  top: 2400px;
+  left: 0px;}
+
+/* ЛEВАЯ ЧАСТЬ ФУТТЕРА-----------------------------------------------------------------------------*/
+
+#textt1 {margin-left: 420px;
+  padding-top: 30px;}
+
+/* ЗАГОЛОВОК */
+.foot1_text {font-size: 30px;}
+/* ОБЩИЙ ТЕКСТ*/
+.foot2_text {margin-top: 20px;}
+
+/* ПРАВАЯ ЧАСТЬ ФУТТЕРА-----------------------------------------------------------------------------*/
+
+#textt2 {margin-left: 1250px;
+  margin-top: -205px;}
+
+/* ОБЩИЙ ТЕКСТ */
+.foot4_text {margin-top: 35px}
+
+/* ФОТО GOOGOLE MAPS */
+.karta1{width: 12px;}
+.img6 {width: 420px;
+  height: 150px;
+  margin-left: -35px;}
+
+/* ЗНАЧОК ВРЕМЕНИ */
+.vremya1{width: 14px;
+  margin-top: 20px;}
+
+/* АДРЕСС */
+.kontakti_text {font-size: 15px;
+  margin-top: -20px;
+  margin-left: 30px;}
+
+/* ЗНАЧОК ТЕЛЕФОНА */
+.tell {width: 15px;
+  margin-top: 25px} 
+.tel_text1 {color: white;}
+
+/* ВСЕ СОЦ СЕТИ ФУТТЕРА-----------------------------------------------------------------------------*/
+
+#textt3 {margin-left: 810px;
+  margin-top: -180px;}
+.textt {width: 300px;
+  color: #DCDCDC;}
+
+/* ЗНАЧКИ СОЦ СЕТЕЙ-----------------------------------------------------------------------------*/
+
+.foot5_text {width: 350px;
+  height: 50px;
+  margin-left: 20px;}
+
+#float2 {margin-top: -42px;
+  width: 58px}
+#float4 {margin-left: 0px;}
+#float3 {margin-left: 80px;}
+
+.float {float: left;
+  margin-top: -43px;
+  margin-left: 30px;
+  margin-top: -43px;}
+
+/* ФОТО СОЦ СЕТЕЙ */
+.insta {position:absolute;
+top:25px;
+width: 38px;}
+.you {position:absolute;
+width: 42px; top:25px;
+margin-left: 253px;}
+.face {position:absolute;
+width: 38px; top:25px;
+  margin-left: 40px;}
+.trip {position:absolute;
+width: 38px; top:25px;
+  margin-left: 67px;}
+.telega {position:absolute;
+width: 40px; top:25px;
+  margin-left: 223px;}
+
+/* КОНЕЦ ФУТТЕР РЫНКА ЕДЫ-----------------------------------------------------------------------------*/
+
+
+#block_menu {position: absolute;
+  width:310px;
+  height:180px;
+  background-color:#FFFFE0;
+  left:1420px;
+  top:10px;
+opacity:0;
+color:black;
+  border-radius:20px;
+}
+
+#korzina_block_menu {position: absolute;
+  width:50px;
+  height:50px;
+  left:1740px;
+  top:25px;
+   background-image: url(https://cdn1.radikalno.ru/uploads/2020/6/22/0ccd45cc45f8f78f99321c9e64b43725-full.png);
+ }
+
+
+#korzina_block_menu:hover ~ #block_menu{transition-property:opacity; transition-duration:0.001s, 0.001s; transition-delay: 0.001s, 0.001s; transition-timing-function: ease-in,ease-in;  opacity:1 }
+	</style
+	
+	
+	
+  </head>
+  
+   <body>
+    
+      <div id="header"> 
+        
+        <a name="top1" id="top12">
+    <!-- ХЕДДЕР С КНОПКАМИ -->
+    <div class="dd"></div> 
+           
+     <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html" >
+     <img class="img_glavnaya" src="https://cdn1.radikalno.ru/uploads/2020/6/22/935e17b2fc93666ba424c94f7da15500-full.png"alt="Fringe" title="На главную">
+        </a>
+        
+         <div id="korzina_block_menu"><a class="map123"  href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0/projekt_korzina_1.html" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ </a>
+       </div> <div id="block_menu"></div>
+             
+   <!-- АНИМАЦИЯ КНОПОК -->
+    <div class="anim1">
+      
+      
+    <div id="button1" class="button" ><a href="#qw"> РЕСТОРАНЫ </a></div> 
+      <script>
+          const anchors1 = document.querySelectorAll('a[href*="#qw"]')
+
+for (let anchor1 of anchors1) {
+  anchor1.addEventListener('click', function (e1) {
+    e1.preventDefault()
+    
+    
+    document.getElementById("qw12").scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })      
+  })
+}
+      </script>
+      
+    <div id="button2" class="button" onclick="napitki()"><a href="#qqq"> НАПИТКИ </a></div> 
+       <script>
+         const anchors2 = document.querySelectorAll('a[href*="#qqq"]')
+
+for (let anchor2 of anchors2) {
+  anchor2.addEventListener('click', function (e2) {
+    e2.preventDefault()
+    
+    
+    document.getElementById("qqq12").scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })      
+  })
+}
+      </script>
+      
+    <div id="button3" class="button"> <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt_photo.html#qw" >ФОТО</a></div> 
+      
+    <div id="button4" class="button" onclick="otzivi()"><a href="#qw4"> ОТЗЫВЫ </a></div>
+ <script>
+   const anchors3 = document.querySelectorAll('a[href*="#qw4"]')
+
+for (let anchor3 of anchors3) {
+  anchor3.addEventListener('click', function (e3) {
+    e3.preventDefault()
+    
+    
+    document.getElementById("qw412").scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })      
+  })
+}
+      </script>
+      
+        </div>
+         </div>
+    
+    
+   
+    <!-- МЕНЮ БЛОКИ -->
+    <div class="bodyept"> 
+          
+ 
+      <!-- ПИЦЦА -->
+           <div id="pizza" class="hover1"> 
+         <a name="qw" id="qw12"></a>
+        <div class="pizza_foto">
+            
+          <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_pizza.html">
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2017/08/FratelliPizzaSalamiMilano-1170x779.jpg" title="FRATELLI PASTA & PIZZA">   
+          </a>
+         
+         </div>
+          
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_pizza.html"  >FRATELLI PASTA & PIZZA 
+           </a>
+           
+           </div>
+         
+          <div class="text2">  
+            
+            <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_pizza.html" >Свежая паста из отборных итальянских ингридиентов и пицца из дровяной печи
+            </a>
+            
+         </div>
+           </div>
+         
+      <!-- БУРГЕР -->
+           <div id="burger" class="hover1"> 
+             
+        <div class="burger_foto">
+          
+          <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_burger.html" >
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2018/12/DSC_3209-1170x779.jpg" title="БУРГЕР И КРЫЛО">
+            </a>
+          
+             </div>
+         
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_burger.html" >БУРГЕР И КРЫЛО
+           </a>
+           
+             </div>
+         
+             <div class="text2"> 
+               
+                <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_burger.html" >Румяные булочки, огромной котлеты и нереально аппетитные копченые ребра
+               </a>
+               
+               </div>
+              </div>
+          
+      <!-- ЧЕРНОМОРКА -->
+           <div id="chernomorka" class="hover1"> 
+             
+        <div class="chernomorka_foto">
+          
+          <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_fish.html" >
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2017/08/Chernomorka.jpg" title="ЧЕРНОМОРКА">
+            </a>
+          
+             </div>
+         
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_fish.html" >ЧЕРНОМОРКА
+           </a>
+           
+             </div>
+         
+              <div class="text2">
+                
+                 <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_fish.html" >Свежая черноморская рыба и морепродукты
+                </a>
+                
+             </div>
+              </div>
+         
+      <!-- ГРИЛЬ -->
+           <div id="grill" class="hover1"> 
+         
+        <div class="grill_foto">
+          
+          <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_grill.html" >
+            <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2017/08/grillovnya_myaso_na_gilyatsi-1170x779.jpg" title="ГРИЛЬОВНЯ">
+          </a>
+          
+             </div>
+         
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_grill.html" >ГРИЛЬОВНЯ
+           </a>
+           
+             </div>
+         
+              <div class="text2">
+                
+                 <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_grill.html" >Мясо за голландскими традициями: вкусные мясные гиляки и мясные кусочки
+                </a>
+                
+             </div>
+              </div>
+          
+      <!-- ВЕГАН -->
+           <div id="vegano" class="hover1"> 
+         
+        <div class="vegano_foto">
+          
+          <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_vegano.html" >
+            <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2017/08/VeganoHooliganoVeganPower-1170x779.jpg" title="VEGANO HOOLIGANO">
+          </a>
+          
+             </div>
+         
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_vegano.html" >VEGANO HOOLIGANO
+           </a>
+           
+             </div>
+         
+               <div class="text2">
+                 
+                  <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_vegano.html" >Первая сеть веганскиx заведений питания в Украине. Широкий выбор напитков, гамбургеров, хот-догов, салатов и закусок
+                 </a>
+                 
+             </div>
+           </div>
+          
+      <!-- ХОТ-ДОГИ -->
+           <div id="hot_dogs" class="hover1"> 
+         
+        <div class="hot_dogs_foto">
+          
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_hotdogs.html" >
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2017/08/11dogs_made_in_italy-1170x779.jpg" title="ELEVEN DOGS">
+          </a>
+          
+             </div>
+         
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_hotdogs.html" >ELEVEN DOGS
+           </a>
+           
+             </div>
+         
+                 <div class="text2">
+                   
+                    <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_hotdogs.html" >Современные хот-доги: свежие булочки на йогуртовой основе + вкуснейшие колбаски собственного производства
+                   </a>
+                   
+             </div>
+              </div>
+           
+      <!-- ПЫШКА -->
+           <div id="pishka" class="hover1"> 
+         
+        <div class="pishka_foto">
+          
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_pishka.html" >
+             <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2017/08/Pyshechnaya.jpg" title="ПЫШЕЧНАЯ">
+          </a>
+          
+          </div>
+         
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_pishka.html" >ПЫШЕЧНАЯ
+           </a>
+           
+          </div>
+         
+          <div class="text2">
+            
+             <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_pishka.html" >Всегда свежие пышки, пончики и бейглы: сладкие и соленые, с глазурью и начинками
+            </a>
+            
+          </div>
+            </div>
+       
+      <!-- ТАКО -->
+           <div id="taco" class="hover1"> 
+         
+        <div class="taco_foto">
+          
+          <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_taco.html" >
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2018/12/8ae43457-32d4-4546-9a1d-21d742656aec-2015-0616_banh-mi-soft-tacos_alpha-smoot_105.jpg" title="БОЖЕСТВЕННЫЙ ТАКО">
+          </a>
+          
+          </div>
+         
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_taco.html" >БОЖЕСТВЕННЫЙ ТАКО
+           </a>
+           
+          </div>
+         
+            <div class="text2">
+              
+              <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_taco.html" >Всегда теплые тако, божественный тартилии и сочный фарш с острым соусом
+              </a>
+              
+          </div>
+             </div>
+       
+      <!-- СУШИ -->
+           <div id="Rolli" class="hover1"> 
+             
+        <div class="Rolli_foto">
+          
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_rolls.html"                                     >
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2018/12/DSC_4614-1170x779.jpg" title="ВЕЖЛИВЫЙ ЛОСОСЬ">
+          </a>
+          
+          </div>
+             
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_rolls.html"                                     >ВЕЖЛИВЫЙ ЛОСОСЬ
+           </a>
+           
+          </div>
+             
+          
+             
+            <div class="text2">
+           
+               <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_rolls.html"                                     >Суши, роллы и сеты на любой вкус
+              </a>
+              
+          </div>
+             </div>
+          
+      <!-- СОКИ -->
+           <div id="svegak" class="hover1"> 
+               <a name="qqq" id="qqq12"></a>
+        <div class="svegak_foto">
+          
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/projekt_svejak.html" >
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2018/12/DSC_3164-1170x779.jpg" title="СВЕЖАК">
+          </a>
+          
+            </div>
+            
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/projekt_svejak.html" >СВЕЖАК
+           </a>
+           
+            </div>
+            
+             <div class="text2">
+               
+                <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/projekt_svejak.html" >Свежевыжатый сок, сок на шнековой соковыжималки, вкусный смузи с мёдом, натуральный, свежий лимонад
+               </a>
+               
+            </div>
+             </div>
+         
+      <!-- БАР -->
+           <div id="bar" class="hover1"> 
+            
+        <div class="bar_foto">
+          
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/projekt_bar.html" >
+          <img class="edaimg" src="https://cityfood.market/wp-content/uploads/2017/08/BarDo.jpg" title="BAR.DO">
+          </a>
+          
+            </div>
+            
+         <div class="text1">
+           
+           <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/projekt_bar.html" >BAR.DO
+           </a>
+           
+            </div>
+            
+             <div class="text2">
+               
+                <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/projekt_bar.html" >Винный бар: 50 сортов вина из Франции, Италии, Чили и Украины
+               </a>
+               
+            </div>
+             </div>
+      </div>
+       
+    
+    <!-- ОПИСАНИЕ РЫНКА ЕДЫ -->
+      <div class="opisanie" > 
+        
+         <!-- ОПИСАНИЕ ЗАГЛАВИЕ -->
+        <div class="opisanie_text1">
+          Ешь. Пей. Танцуй.
+         </div>
+        
+         <!-- ОПИСАНИЕ ОБЩИЙ ТЕКСТ -->
+         <div class="opisanie_text">
+На Городском Рынке Еды угощают итальянской, французской, греческой, американской, ближневосточной и, конечно же, одесской кухней.
+Помимо огромного выбора блюд на любой вкус и стиль, разнообразно и барное меню. Вино, пиво, смузи, кофе, какао, коктейли и ром на обоих этажах Рынка.
+В среду на большом экране показывают кино.
+В четверг на 2 этаже в БарДо акустический концерт.
+В пятницу и субботу на большой сцене выступают музыкальные группы всевозможных направлений.
+        </div>
+        
+        <!-- ОПИСАНИЕ ФОТО -->
+        <div class="opisanie_foto">
+          <img class="img1" src="https://cityfood.market/wp-content/uploads/2016/04/Chernomorka-oysters-wine.jpg">
+          <img class="img2" src="https://cityfood.market/wp-content/uploads/2016/04/Beer_meat.jpg">
+        </div>
+             </div>
+    
+	 <!-- ОСТАВИТЬ ОТЗЫВ -->
+    <button id="ostavotz" onclick=OTZ1()>Оставить отзыв </button>
+        
+      <form name=fname>
+<input id="itemNameotz" type=text name =itemName size=10 placeholder="Имя" class="invis">
+<input id="itemotz" type=text name =itemotz1 size=10 placeholder="Отзыв" class="invis">
+
+<input type="button" value="Отправить" onclick=OTZ2() id="chet" class="invis">
+       </form>
+        
+        <div id="divspas" class="invis">
+       <p id="divspasp" class="invis"> </p>
+        <p id="divspasp1" class="invis"> </p>
+          
+ 
+          </div>
+    
+    <!-- ОТЗЫВЫ РЫНКА ЕДЫ -->
+       <div class="otzivi"> 
+         <a name="qw4" id="qw412"></a>
+         
+           <!-- ЗАГЛАВИЕ ОТЗЫВОВ -->
+         <div class="otzivii">
+           Что говорят о KiyevFoodMarket:
+           </div>
+         
+          <!-- ОТЗЫВ 1 -->
+        <div class="otzivi1">
+          
+          <img id="img3" class="kovichki" src="https://cdn1.radikalno.ru/uploads/2020/6/22/9ef692909d7a9ee2afa8ab4ed04e279d-full.png">
+          
+           <!-- ОТЗЫВ ИМЯ 1 -->
+          <div class="imya1">
+            Alex Mulkevich:
+          </div>
+          
+          <!-- ОТЗЫВ ТЕКСТ 1 -->
+          <div id="otzivi1_text" class="otzivi10_text">
+            В кращих традиціях європейських ринків, де можна поласувати місцевими продуктами. Кожних ресторанчик має свою фішку, але загальна концепція одна. Були приємно здивовані поведінкою та відношенням персоналу закладу (сміття прибирається, гостям допомагають). Окрема подяка власнику за розуміння з великою собакою)
+          </div>
+         </div>
+         
+         <!-- ОТЗЫВ 2 -->
+         <div class="otziv2">
+           <img id="img4" class="kovichki" src="https://cdn1.radikalno.ru/uploads/2020/6/22/9ef692909d7a9ee2afa8ab4ed04e279d-full.png">
+           
+            <!-- ОТЗЫВ ИМЯ 2 -->
+           <div class="imya2">
+            Natasha Maksymenko:
+          </div>
+           
+           <!-- ОТЗЫВ ТЕКСТ 2 -->
+          <div id="otzivi2_text" class="otzivi10_text">
+            Оценю на 5. Понравилось разнообразие, цены, радушие, шум-гам и атмосфера. Много сидячих мест, есть где поболтать. Черноморочка — супер! До сих пор в захваті от мидий, корюшки и кнутов. Вино — хорошо. Круассаны отлично. Свинья на сене — имхо, ребра чуть пересушены и пересолены, но бананово-имбирный соус попал в цель. Томатный сок  прекрасен, как и подача в поллитровых банках.
+          </div>
+         </div>
+         
+         <!-- ОТЗЫВ 3 -->
+         <div class="otziv3">
+           <img id="img5" class="kovichki" src="https://cdn1.radikalno.ru/uploads/2020/6/22/9ef692909d7a9ee2afa8ab4ed04e279d-full.png">
+           
+            <!-- ОТЗЫВ ИМЯ 3 -->
+           <div class="imya3">
+            Жанна Мартьянова:
+          </div>
+           
+           <!-- ОТЗЫВ ТЕКСТ 3 -->
+          <div id="otzivi3_text" class="otzivi10_text">
+           Вы не оставляете шансов уйти с пустыми руками. Даже если сил есть на месте не остаётся, неумышленно набираешь еду с собой. Реализация космическая. Начиная от визуального оформления заканчивая сервисом. Осторожно, в не тихом баре можно оставить весь бюджет😁 или продать душу бармену ♥
+          </div>
+           
+         </div> 
+         
+      </div>
+    
+    
+    <!-- ФУТТЕР РЫЕКА ЕДЫ -->
+      <div class="foot1"> 
+        
+        <div class="foot1_foto"></div>
+        
+        
+        <!-- ЛEВАЯ ЧАСТЬ ФУТТЕРА -->
+        <div id=textt1 class="textt">
+          
+           <!-- ЗАГОЛОВОК -->
+         <div class="foot1_text"> О нас</div>
+          
+           <!-- ОБЩИЙ ТЕКСТ -->
+         <div class="foot2_text">
+Городской рынок еды: 1200 м2, 13 кафе, 6 баров и сцена. Кухни всех направлений и напитки любого градуса. Ланчи и ужины, концерты, мастер-классы и дегустации. Открыт 19 июля 2017 года. Яркий туристический объект, любимый местными жителями в любое время года.
+        </div>
+          </div>
+        
+        
+         <!-- ВСЕ СОЦ СЕТИ ФУТТЕРА -->
+        <div id=textt3 class="textt">
+          
+          <div class="foot5_text">
+            
+         <!-- INSTAGRAM -->
+           <div id="float1">
+            <a href="https://www.instagram.com/kyivfoodmarket/?hl=ru" target="_blank">
+            <img class="insta" src="https://pngicon.ru/file/uploads/instagram.png" target="_blank" title="Instagram">
+            </a>
+           </div>
+            
+         <!-- FACEBOOK -->
+           <div id="float2" class="float">
+            <a href="https://www.facebook.com/kyivfood.market/" target="_blank">
+            <img class="face" src="https://cdn.icon-icons.com/icons2/1099/PNG/512/1485482214-facebook_78681.png" title="Facebook">
+            </a>
+           </div>
+            
+         <!-- TRIPADVIZOR -->
+           <div id="float3" class="float">
+            <a href="https://www.tripadvisor.ru/Restaurant_Review-g294474-d19088036-Reviews-Kyiv_Food_Market-Kiev.html"               target="_blank">
+            <img class="trip" 
+             src="https://www.dlt.travel/immagine/15919/tripadvisor.png" title="Tripadvizor">
+            </a>
+           </div>
+           
+         <!-- TELEGRAM -->
+            <div id="float4" class="float">
+             <a href="https://web.telegram.org/#/im?p=@mctoday">
+             <img class="telega" src="https://pngicon.ru/file/uploads/telegram.png" target="_blank" title="Telegram">
+             </a>
+            </div>
+            
+         <!-- YOUTUBE -->
+            <div id="float5" class="float">
+             <a href="https://www.youtube.com/watch?v=Orm92OHZ1N0" target="_blank">
+             <img class="you" src="https://s1.iconbird.com/ico/2013/9/446/w512h5121380376600FlurryYouTubeAlt2.png"                       target="_blank" title="YouTube">
+             </a>
+            </div>
+            
+          </div>
+          
+          <!-- GOOGLE MAPS -->
+          <div class="maps1">
+            <a class="map" title="maps" href="https://www.google.com/maps/place/Kyiv+Food+Market/@50.4422485,30.5445022,15z/data=!4m2!3m1!1s0x0:0xd70dd165b5e87b8c?sa=X&ved=2ahUKEwjfhfX1naHoAhXBxIsKHT6JAMIQ_BIwCnoECB4QCA" target="_blank">
+            <img class="img6" src="https://cdn1.radikalno.ru/uploads/2020/6/22/f4535e6a756b025833039b7fdfe204e2-full.jpg" alt="Fringe">
+            </a>
+          </div>
+          
+          </div>
+        
+        
+        <!-- ПРАВАЯ ЧАСТЬ ФУТТЕРА -->
+        <div id=textt2 class="textt">
+          
+           <!-- ЗАГОЛОВОК -->
+         <div class="foot1_text">Контакты
+          </div>
+          
+           <!-- ОБЩИЙ ТЕКСТ -->
+         <div class="foot4_text">
+           
+            <!-- ФОТО GOOGOLE MAPS -->
+            <div class="foto_karta">
+              <img class="karta1" 
+                   src="https://cdn1.radikalno.ru/uploads/2020/6/22/f4f23d80ae4ae215ba73be17711f9b4a-full.png">
+            </div>
+           
+            <!-- АДРЕСС -->
+          <div class="kontakti_text">Киев, Московская, 8а
+           </div>
+           
+            <!-- ЗНАЧОК ВРЕМЕНИ -->
+           <div class="foto_vremya">
+             <img class="vremya1" src="https://cdn1.radikalno.ru/uploads/2020/6/22/15782acc4c2a32e89117e913d8165a43-full.png">
+           </div>
+           
+            <!-- ВРЕМЯ РАБОТЫ -->
+           <div class="kontakti_text">ПН-ЧТ 11:00-23:00, ПТ-ВС 11:00-01:00
+           </div>
+           
+           <!-- ЗНАЧОК ТЕЛЕФОНА -->
+           <div class="foto_tel"></div>
+           <img class="tell" 
+                src="https://cdn1.radikalno.ru/uploads/2020/6/22/29de1a85530f479ece413d1a14806683-full.png">
+           
+           <!-- НОМЕР ТЕЛЕФОНА -->
+            <div class="kontakti_text">
+             <a class="tel_text1" href="tel:+380958622708">+380 95 862 27 08
+              </a><br>
+           </div>
+           
+            </div>
+          
+             </div>
+        </div>
+        
+                  <!-- СТРЕЛКА НАВЕРХ -->
+      <div id="strelka">
+        
+        <a href="#top1">
+        <img id="strelka_img" src="https://cdn1.radikalno.ru/uploads/2020/6/22/59ed2d851e9fc404416f1786075baaef-full.png">
+        </a> 
+        
+        </div>
+    <script>
+   const anchors = document.querySelectorAll('a[href*="#top1"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    
+    document.getElementById("top12").scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })      
+  })
+}
+      
+    </script>
+        
+  </body>
+      
+      </html>      

@@ -1,0 +1,510 @@
+<html>
+  
+  <head>   
+    <meta charset="utf-8">
+    <title>KiyevFoodMarket Корзина. ТРЕТИЙ ЭТАП.</title>
+    <meta http-equiv="content-language"content="en-GB">
+    <meta name="description" content="text">
+    <meta name="author" content="Pahomch1k">
+	
+	<style>
+	/* НАЧАЛО ХЕДДЕР -----------------------------------------------------------------------------*/
+
+.dd { position: absolute;
+  background: #808080;
+  height: 100px;
+  width: 1920px;
+  top: 0px;
+  left: 0px;}
+
+.img_glavnaya {position: absolute;
+  width: 100px;
+  left: 540px;
+  top: 5px;}
+
+.img_korzina {position: absolute;
+  width: 50px;
+  left: 1740px;
+  top: 25px;}
+
+
+/* КНОПКИ ХЕДДЕР -----------------------------------------------------------------------------*/
+
+.button {position: absolute;
+  font-size: 25px;
+  top: 25px;
+  font-family: 'Neucha', cursive;}
+
+#button1 {left: 675px;
+  padding-right: 15px;
+  background: none;}
+
+#button2 {left: 880px;}  
+
+#button4 {left: 1180px;}
+
+#button3 {left: 1060px;
+  padding-right: 15px;} 
+
+.anim1 a {color: black;
+  text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;}
+
+a {color: black;
+  text-decoration: none;}
+
+
+/* АНИМАЦИЯ КНОПКИ ХЕДДЕР -----------------------------------------------------------------------------*/
+
+.anim1 a:hover {background-color: #ddd;
+  color: black;}
+
+#button1:hover {ransition-property: height, width, background-color, opacity;
+transition-duration: 1s, 2s;
+  width: 175.4px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+#button2:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s;
+  width: 162px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+#button3:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 90px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+#button4:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 154px;
+  height: 57px;
+  background-color: black;
+  opacity: 0.7;}
+
+/* КОНЕЦ ХЕДДЕР -----------------------------------------------------------------------------*/
+
+
+/* НАЧАЛО БОДИ КОРЗИНА -----------------------------------------------------------------------------*/
+
+.bodyept {position: absolute;
+  width: 1920px;
+  height: 1000px;
+  background-color: #FFFFE0;
+  margin-top: -30px;
+  top: 130px;
+  left: 0px;}
+
+#text_korzina {position: absolute;
+  left: 800px;
+  font-size: 40px;
+  font-family: 'Neucha', cursive;}
+
+/* БОДИ БЛОКИ КОРЗИНА -----------------------------------------------------------------------------*/
+
+#block_korzina {position: absolute;
+  width: 1920px;
+  height: 300px;
+  top: 200px;}
+
+.block_korzina_vse {position: absolute;
+  width: 250px;
+  height: 100px;
+  background-color: #D3D3D3;
+  border-radius: 100px;
+  font-size: 22px;
+  border: 2px solid #228B22;}
+
+#korzina_etap1 {left: 350px; }
+
+#korzina_etap2 {left: 850px;
+  background-color: #D3D3D3;}
+
+#korzina_etap3 {left: 1350px;
+  background-color: #DC143C;
+  border: 2px solid #000000;}
+
+
+/* СТРЕЛКИ БЛОКИ КОРЗИНА */
+.strelka_korzina {position: absolute;
+  width: 80px;
+  margin-top: 10px;
+  left: 690px;}
+
+#strelka_korzina2 {left: 1190px;}
+
+/* ТЕКСТ БЛОКИ КОРЗИНА */
+
+#text_zakaz1 {margin-top: 35px;
+  margin-left: 75px;}
+
+.text_zakaz_2_3 {margin-top: 35px;
+  margin-left: 40px;}
+
+
+/* СПАСИБО ЗА ЗАКАЗ-----------------------------------------------------------------------------*/
+
+#spasibo {position: absolute;
+top: 520px;
+left: 900px}
+
+#img_spasibo {position: absolute;
+  width: 150px;
+  top: -170px;
+  left: 20px;}
+
+.spasibo_p_class {font-size: 35px;}
+
+#spasibo_p {font-size: 55px;
+margin-left: -50px;}
+
+#spasibo_p_text {position: absolute;
+width: 600px;
+  left: -170px;
+  top: 130px;}
+
+/* НАЧАЛО ФУТТЕР РЫНКА ЕДЫ-----------------------------------------------------------------------------*/
+
+.foot1 {position: absolute;
+  height: 250px;
+  width: 1920px;
+  background-color: #000000;
+  top: 900px;
+  left: 0px;}
+
+/* ЛEВАЯ ЧАСТЬ ФУТТЕРА-----------------------------------------------------------------------------*/
+
+#textt1 {margin-left: 420px;
+  padding-top: 30px;}
+
+/* ЗАГОЛОВОК */
+.foot1_text {font-size: 30px;}
+/* ОБЩИЙ ТЕКСТ*/
+.foot2_text {margin-top: 20px;}
+
+/* ПРАВАЯ ЧАСТЬ ФУТТЕРА-----------------------------------------------------------------------------*/
+
+#textt2 {margin-left: 1250px;
+  margin-top: -205px;}
+
+/* ОБЩИЙ ТЕКСТ */
+.foot4_text {margin-top: 30px}
+
+/* ФОТО GOOGOLE MAPS */
+.karta1{width: 12px;}
+.img6 {width: 420px;
+  height: 150px;
+  margin-left: -35px;}
+
+/* ЗНАЧОК ВРЕМЕНИ */
+.vremya1{width: 14px;
+  margin-top: 22px;}
+
+/* АДРЕСС */
+.kontakti_text {font-size: 15px;
+  margin-top: -20px;
+  margin-left: 30px;}
+
+/* ЗНАЧОК ТЕЛЕФОНА */
+.tell {width: 15px;
+  margin-top: 25px} 
+.tel_text1 {color: white;}
+
+/* ВСЕ СОЦ СЕТИ ФУТТЕРА-----------------------------------------------------------------------------*/
+
+#textt3 {margin-left: 810px;
+  margin-top: -180px;}
+.textt {width: 300px;
+  color: #DCDCDC;}
+
+/* ЗНАЧКИ СОЦ СЕТЕЙ-----------------------------------------------------------------------------*/
+
+.foot5_text {width: 350px;
+  height: 50px;
+  margin-left: 20px;}
+
+#float2 {margin-top: -42px;
+  width: 58px}
+#float4 {margin-left: 0px;}
+#float3 {margin-left: 80px;}
+
+.float {float: left;
+  margin-top: -43px;
+  margin-left: 30px;
+  margin-top: -43px;}
+
+/* ФОТО СОЦ СЕТЕЙ */
+.insta {position:absolute;
+top:25px;
+width: 38px;}
+.you {position:absolute;
+width: 42px; top:25px;
+margin-left: 253px;}
+.face {position:absolute;
+width: 38px; top:25px;
+  margin-left: 40px;}
+.trip {position:absolute;
+width: 38px; top:25px;
+  margin-left: 67px;}
+.telega {position:absolute;
+width: 40px; top:25px;
+  margin-left: 223px;}
+
+/* КОНЕЦ ФУТТЕР РЫНКА ЕДЫ-----------------------------------------------------------------------------*/
+
+/* СТРЕЛКА НАВЕРХ -----------------------------------------------------------------------------*/
+#strelka_img {position: fixed;
+  width: 50px;
+  top: 850px;
+  left: 1800px;
+  border-radius:10px;}
+	</style>
+
+  </head>
+  
+  <body>
+    
+    
+  <!-- ХЕДДЕР С КНОПКАМИ -->
+    <div class="dd"></div> 
+             <a name="top1" id="top12">
+     <a class="map123"  href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html" >
+     <img class="img_glavnaya" src="https://cdn1.radikalno.ru/uploads/2020/6/22/935e17b2fc93666ba424c94f7da15500-full.png"alt="Fringe">
+        </a>
+        
+         <a class="map123"  href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0/projekt_korzina_1.html">
+     <img class="img_korzina" src="https://cdn1.radikalno.ru/uploads/2020/6/22/34e43b2c02d8a434b3e0878d987a521e-full.png"alt="Fringe">
+        </a>
+        
+        
+   <!-- АНИМАЦИЯ КНОПОК -->
+    <div class="anim1">
+      
+    <div id="button1" class="button"><a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html"> РЕСТОРАНЫ </a></div> 
+    
+    <div id="button2" class="button"><a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html"> НАПИТКИ </a></div> 
+      
+    <div id="button3" class="button"> <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt_photo.html#qw">ФОТО</a></div> 
+      
+    <div id="button4" class="button"><a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html"> ОТЗЫВЫ </a>
+      
+       </div>
+        </div>
+    
+    
+       <!-- БОДИ КОРЗИНА -->
+          <div class="bodyept" > 
+            
+            <!-- ТЕКСТ КОРЗИНА -->
+            <div id="text_korzina">
+              
+              <p>
+                 Ваш заказ в работе 
+              </p>
+              
+              </div>
+            
+            <!-- БОДИ БЛОКИ КОРЗИНА -->
+             <div id="block_korzina">
+               
+             <div id="korzina_etap1" class="block_korzina_vse"> 
+               
+              <p id="text_zakaz1">
+                Ваш заказ 
+               </p>
+               
+               </div>
+               
+                <img id="strelka_korzina1" class="strelka_korzina"  src="https://image.flaticon.com/icons/png/512/50/50621.png" alt="Fringe">
+               
+                <div id="korzina_etap2" class="block_korzina_vse">
+                  
+                <p class="text_zakaz_2_3">  
+                  Оформление заказа
+                  </p>
+                  
+               </div>
+               
+                  <img id="strelka_korzina2" class="strelka_korzina"  src="https://image.flaticon.com/icons/png/512/50/50621.png" alt="Fringe">
+               
+                  <div id="korzina_etap3" class="block_korzina_vse">
+                    
+                   <p class="text_zakaz_2_3">
+                     Ваш заказ в работе 
+                    </p>
+                    
+               </div>
+               
+               </div>
+            
+            
+            <!-- СПАСИБО ЗА ЗАКАЗ -->
+            <div id="spasibo">
+              
+              <img src="https://image.flaticon.com/icons/png/512/7/7539.png" id="img_spasibo"> 
+              <p class="spasibo_p_class" id="spasibo_p">
+                СПАСИБО!
+              </p>
+              
+               <p class="spasibo_p_class" id="spasibo_p_text">
+                Ваш заказ в работе. Наш оператор свяжится с вами в течении 10 минут. 
+              </p>
+              
+              
+              
+              </div>
+            
+            
+           
+            
+            
+             <!-- ФУТТЕР РЫЕКА ЕДЫ -->
+      <div class="foot1"> 
+        
+        <div class="foot1_foto"></div>
+        
+        
+        <!-- ЛEВАЯ ЧАСТЬ ФУТТЕРА -->
+        <div id=textt1 class="textt">
+          
+           <!-- ЗАГОЛОВОК -->
+         <div class="foot1_text"> О нас</div>
+          
+           <!-- ОБЩИЙ ТЕКСТ -->
+         <div class="foot2_text">
+Городской рынок еды: 1200 м2, 13 кафе, 6 баров и сцена. Кухни всех направлений и напитки любого градуса. Ланчи и ужины, концерты, мастер-классы и дегустации. Открыт 19 июля 2017 года. Яркий туристический объект, любимый местными жителями в любое время года.
+        </div>
+          </div>
+        
+        
+         <!-- ВСЕ СОЦ СЕТИ ФУТТЕРА -->
+        <div id=textt3 class="textt">
+          
+          <div class="foot5_text">
+            
+         <!-- INSTAGRAM -->
+           <div id="float1">
+            <a href="https://www.instagram.com/kyivfoodmarket/?hl=ru" target="_blank">
+            <img class="insta" src="https://pngicon.ru/file/uploads/instagram.png" target="_blank" title="Instagram">
+            </a>
+           </div>
+            
+         <!-- FACEBOOK -->
+           <div id="float2" class="float">
+            <a href="https://www.facebook.com/kyivfood.market/" target="_blank">
+            <img class="face" src="https://cdn.icon-icons.com/icons2/1099/PNG/512/1485482214-facebook_78681.png" title="Facebook">
+            </a>
+           </div>
+            
+         <!-- TRIPADVIZOR -->
+           <div id="float3" class="float">
+            <a href="https://www.tripadvisor.ru/Restaurant_Review-g294474-d19088036-Reviews-Kyiv_Food_Market-Kiev.html"               target="_blank">
+            <img class="trip" 
+             src="https://www.dlt.travel/immagine/15919/tripadvisor.png" title="Tripadvizor">
+            </a>
+           </div>
+           
+         <!-- TELEGRAM -->
+            <div id="float4" class="float">
+             <a href="https://web.telegram.org/#/im?p=@mctoday">
+             <img class="telega" src="https://pngicon.ru/file/uploads/telegram.png" target="_blank" title="Telegram">
+             </a>
+            </div>
+            
+         <!-- YOUTUBE -->
+            <div id="float5" class="float">
+             <a href="https://www.youtube.com/watch?v=Orm92OHZ1N0" target="_blank">
+             <img class="you" src="https://s1.iconbird.com/ico/2013/9/446/w512h5121380376600FlurryYouTubeAlt2.png"                       target="_blank" title="YouTube">
+             </a>
+            </div>
+            
+          </div>
+          
+          <!-- GOOGLE MAPS -->
+          <div class="maps1">
+            <a class="map" title="maps" href="https://www.google.com/maps/place/Kyiv+Food+Market/@50.4422485,30.5445022,15z/data=!4m2!3m1!1s0x0:0xd70dd165b5e87b8c?sa=X&ved=2ahUKEwjfhfX1naHoAhXBxIsKHT6JAMIQ_BIwCnoECB4QCA" target="_blank">
+            <img class="img6" src="https://cdn1.radikalno.ru/uploads/2020/6/22/f4535e6a756b025833039b7fdfe204e2-full.jpg" alt="Fringe">
+            </a>
+          </div>
+          
+          </div>
+        
+        
+        <!-- ПРАВАЯ ЧАСТЬ ФУТТЕРА -->
+        <div id=textt2 class="textt">
+          
+           <!-- ЗАГОЛОВОК -->
+         <div class="foot1_text">Контакты
+          </div>
+          
+           <!-- ОБЩИЙ ТЕКСТ -->
+         <div class="foot4_text">
+           
+            <!-- ФОТО GOOGOLE MAPS -->
+            <div class="foto_karta">
+              <img class="karta1" 
+                   src="https://cdn1.radikalno.ru/uploads/2020/6/22/f4f23d80ae4ae215ba73be17711f9b4a-full.png">
+            </div>
+           
+            <!-- АДРЕСС -->
+          <div class="kontakti_text">Киев, Московская, 8а
+           </div>
+           
+            <!-- ЗНАЧОК ВРЕМЕНИ -->
+           <div class="foto_vremya">
+             <img class="vremya1" src="https://cdn1.radikalno.ru/uploads/2020/6/22/15782acc4c2a32e89117e913d8165a43-full.png">
+           </div>
+           
+            <!-- ВРЕМЯ РАБОТЫ -->
+           <div class="kontakti_text">ПН-ЧТ 11:00-23:00, ПТ-ВС 11:00-01:00
+           </div>
+           
+           <!-- ЗНАЧОК ТЕЛЕФОНА -->
+           <div class="foto_tel"></div>
+           <img class="tell" 
+                src="https://cdn1.radikalno.ru/uploads/2020/6/22/29de1a85530f479ece413d1a14806683-full.png">
+           
+           <!-- НОМЕР ТЕЛЕФОНА -->
+            <div class="kontakti_text">
+             <a class="tel_text1" href="tel:+380958622708">+380 95 862 27 08
+              </a><br>
+           </div>
+           
+            </div>
+          
+             </div>
+        </div>
+        
+                  <!-- СТРЕЛКА НАВЕРХ -->
+      <div id="strelka">
+        
+        <a href="#top1">
+        <img id="strelka_img" src="https://cdn1.radikalno.ru/uploads/2020/6/22/59ed2d851e9fc404416f1786075baaef-full.png">
+        </a> 
+        
+        </div>
+    <script>
+   const anchors = document.querySelectorAll('a[href*="#top1"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    
+    document.getElementById("top12").scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })      
+  })
+}
+      
+    </script>
+        
+  </body>
+      
+      </html>      

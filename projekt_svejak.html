@@ -1,0 +1,388 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>СВЕЖАК KiyevFoodMarket</title>
+    <meta http-equiv="content-language" content="en-GB">
+    <meta name="author" content="jigsaw">
+           <style>
+		   /* header */
+
+.dd {background: #808080; height: 200px; width: 100%; position: absolute; left: 0px; top: -100px;}
+.img {width: 120px; position: absolute; left: 910px; top: 10px;}
+
+/* Кнопки в хедере и анимации для них */
+.button1 {font-size: 25px; position: absolute; left: 535px; top: 25px;  padding-right: 15px; font-family: 'Neucha', cursive; background: none;}
+.button1:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 175.4px; height: 57px; background-color: black; opacity: 0.7; }
+
+.button2 {font-size: 25px; position: absolute; left: 740px; top: 25px; font-family: 'Neucha', cursive;}
+.button2:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 162px; height: 57px; background-color: black; opacity: 0.7; }
+.button3 {font-size: 25px; position: absolute; left: 1050px; top: 25px;  padding-right: 15px; font-family: 'Neucha', cursive; }
+.button3:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 90px; height: 57px; background-color: black; opacity: 0.7; }
+.button4 {font-size: 25px; position: absolute; left: 1200px; top: 25px; font-family: 'Neucha', cursive;}
+.button4:hover {transition-property: height, width, background-color, opacity; 
+transition-duration: 1s, 2s; width: 154px; height: 57px; background-color: black; opacity: 0.7; } 
+
+/* Картинки по бокам */
+
+.img2 {width: 654px; position: absolute; left: -131px; top: -182px;opacity: 0.97; }
+.img3 { width: 505px;height: 1298px; position: absolute; left:1400px; top: -102px;opacity: 0.97; }
+.img4 { position: absolute; left: 550px; top: 182px; box-shadow: 0 0 10px rgba(2,5,2,5);}
+
+/* Описание, меню, название ресторана */
+
+.text5 { position: absolute; top: 160px; left: 860px; font-style: italic; font-size: 50px; font-family: 'Bellota', cursive;  }
+.text6 { position: absolute; top: 510px; left: 770px; width: 700px; font-family: 'Bellota', cursive;  line-height: 2.4;}
+.text7 { position: absolute; top: 615px; left: 970px; width: 700px; font-family: 'Bellota', cursive; line-height: 2.4;}
+.block { width: 500px; height: 430px; background: #AFEEEE; position: absolute; left: 720px; top: 490px; border-radius: 50px;}
+
+.info1 {width: 550px; position: absolute; left: 696px; top: 255px; font-size: 20px; text-align: center; font-family: 'Bellota', cursive;}
+
+/* Анимации для кнопок далее/назад */
+
+.anim1 a {color:black;text-decoration:none;}
+.anim1 a {text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;}
+.anim1 a:hover {background-color: #ddd;
+    color: black;}
+.button9 a:hover {background-color: #ddd;
+    color: black;}
+.previous {background-color: #f1f1f1;
+    color: black; width: 100px; height: 100px;}
+.next {background-color: #4CAF50;
+    color: white;}
+.round {border-radius: 50%;}
+.button9 {position: absolute; top: 1000px; left: 890px;}
+.menu {position: absolute; top: 430px;left: 905px;font-size: 30px; font-family: 'Bellota', cursive;}
+
+/* footer */
+
+.foot1{height:250px; width:100.3%; background-color:#000000; position: absolute; top: 1050px; left: -5px;}
+.foot1_text{ font-size:30px; margin-top: 22px;}
+.foot11_text{ font-size:30px; margin-top: -22px; position:absolute;}
+.textt{width:300px; color:#DCDCDC; margin-left:420px; padding-top:30px}
+.foot2_text{margin-top: -5px; }
+
+.foot3_text{ font-size:30px;}
+.textt2{width:300px; color:#DCDCDC; margin-left:1250px; margin-top:-205px}
+.textt3{width:300px; color:#DCDCDC; margin-left:810px; margin-top:-180px}
+.foot5_text{width:350px;height:50px;margin-left:20px;}
+.foot4_text{margin-top:30px}
+.tell{width:15px;margin-top:25px} .karta1{width:12px;} .vremya1{width:14px;margin-top:22px}
+.tel_text1{color:white;}
+a {text-decoration: none;}
+.tel_text{font-size:15px;margin-top:-20px; margin-left:30px}
+.karta_text{font-size:15px;margin-top:-20px; margin-left:30px}
+.vremya_text{font-size:15px;margin-top:-20px; margin-left:30px}
+.insta{width:38px; position: absolute; left: 755px; top: 0px;}
+.face{width:38px;margin-left:52px; position: absolute; top: 0px;}
+.trip{width:38px;margin-left:40px; margin-top: 13px; }
+.telega{width:40px;margin-left:10px; margin-top: 13px;}
+.you{width:42px;position: absolute; top: -3px; left: 1075px;}
+.float1{position:absolute;top:30px;left:80px}
+.float2{position:absolute;top:92px;left:845px;margin-left:5px;margin-top:-62px}
+
+.float3{position:absolute;top:60px;left:855px;margin-left:80px;margin-top:-43px; margin-right:-40px;}
+.float4{position:absolute;top:60px;left:970px;margin-left:60px;margin-top:-43px}
+.float5{position:absolute;top:75px;left:0px;margin-left:30px;margin-top:-43px}
+.img6{width:420px; height:150px; margin-top:; margin-left:-35px}
+
+/* Kорзина */
+
+#block_menu {position: absolute;
+  width:310px;
+  height:180px;
+  background-color:#FFFFE0;
+  left:1420px;
+  top:10px;
+opacity:0;
+color:black;
+  border-radius:20px;
+}
+
+#korzina_block_menu {position: absolute;
+  width:50px;
+  height:50px;
+  left:1740px;
+  top:25px;
+ background-image: url(https://cdn1.radikalno.ru/uploads/2020/6/22/0ccd45cc45f8f78f99321c9e64b43725-full.png);}
+
+
+#korzina_block_menu:hover ~ #block_menu{transition-property:opacity; transition-duration:0.001s, 0.001s; transition-delay: 0.001s, 0.001s; transition-timing-function: ease-in,ease-in;  opacity:1 }
+
+/* Анимация для кнопки покупки */
+
+.rere1 {
+  width: 25px; position: absolute; left:350px; margin-top: 7px;
+}
+
+.rere1:hover {
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: white;
+}
+
+#demo{
+  position: absolute; top:145px; left:1800px; color:#800000
+}
+/* СТРЕЛКА НАВЕРХ -----------------------------------------------------------------------------*/
+#strelka_img {position: fixed;
+  width: 50px;
+  top: 850px;
+  left: 1800px;
+  border-radius:10px;}
+		   </style>
+		   
+		   <script>
+		   var korzina=[];
+var pizzasyma=[];
+
+
+function vivesti()
+{
+ var text="<br>"; 
+ var k = 1;
+ for (var i=0;i<korzina.length;i++)
+ {
+   text = text + " " + "<b>" + k + ".</b> " + korzina[i] + "<br>";
+   k++;
+ }
+document.getElementById("block_menu").innerHTML=text;
+}
+
+function vivesti_price()
+{
+  var sumpizza = 0;
+for(var j = 0; j < pizzasyma.length; j++)
+    { sumpizza += pizzasyma[j]; }
+document.getElementById("demo").innerHTML=sumpizza + " грн.";
+}
+
+/* Меню и покупка */
+
+/* 1 */
+
+function product1()
+{ 
+Add_Tovar1(korzina,pizzasyma); 
+vivesti_price();
+vivesti();
+}
+
+function Add_Tovar1(arr1,arr2)
+{ arr1.push("СМУЗИ «ПРИЯТНОСТЬ» - 70 ₴"); arr2.push(70);} 
+
+/*  2  */
+
+function product2()
+{ 
+Add_Tovar2(korzina,pizzasyma); 
+vivesti_price();
+vivesti();
+}
+
+function Add_Tovar2(arr1,arr2)
+{ arr1.push("СМУЗИ РАДОСТЬ - 80₴"); arr2.push(80);} 
+
+/* 3 */
+
+function product3()
+{ 
+Add_Tovar3(korzina,pizzasyma); 
+vivesti_price();
+vivesti();
+}
+
+function Add_Tovar3(arr1,arr2)
+{ arr1.push("АПЕЛЬСИНОВЫЙ ФРЕШ -  89 ₴"); arr2.push(89);} 
+
+/* 4 */
+
+function product4()
+{ 
+Add_Tovar4(korzina,pizzasyma); 
+vivesti_price();
+vivesti();
+}
+
+function Add_Tovar4(arr1,arr2)
+{ arr1.push("СМУЗИ ЭКЗОТИЧНОСТЬ - 142 ₴"); arr2.push(142);} 
+
+/* 5 */
+
+function product5()
+{ 
+Add_Tovar5(korzina,pizzasyma); 
+vivesti_price();
+vivesti();
+}
+
+function Add_Tovar5(arr1,arr2)
+{ arr1.push("СМУЗИ ЭКЗОТИЧНОСТЬ - 79 ₴ "); arr2.push(79);} 
+
+/* 6 */
+
+function product6()
+{ 
+Add_Tovar6(korzina,pizzasyma); 
+vivesti_price();
+vivesti();
+}
+
+function Add_Tovar6(arr1,arr2)
+{ arr1.push("ГРЕЧЕСКИЙ САЛАТ - 120 ₴"); arr2.push(120);} 
+
+/* 7 */
+
+function product7()
+{ 
+Add_Tovar7(korzina,pizzasyma); 
+vivesti_price();
+vivesti();
+}
+
+function Add_Tovar7(arr1,arr2)
+{ arr1.push("АПЕЛЬСИНОВЫЙ ФРЕШ - 80 ₴"); arr2.push(80);} 
+		   </script>
+  </head>
+  <body>
+    
+    <!-- HEADER AND SIDE IMG -->
+       <a name="top1" id="top12">
+        <div class="block"> </div>
+    <div class="end"> </div> 
+      <img class="img2" src="https://cdn1.radikalno.ru/uploads/2020/6/22/50c5374385a94d6728c77416e22ab1db-full.jpg">
+      <img class="img3" src="https://cdn1.radikalno.ru/uploads/2020/6/22/a6159239262ec9086ddc35cd41c8fb66-full.jpg"> 
+    <div class="dd">
+    <p id="demo"></p>
+     </div> 
+   
+        <div id="korzina_block_menu"><a class="map123"  href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0/projekt_korzina_1.html" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ </a>
+       </div> <div id="block_menu"></div>
+       
+     <div class="anim1">
+    <a class="aaa" href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html">
+       <img class="img" src="https://cdn1.radikalno.ru/uploads/2020/6/22/935e17b2fc93666ba424c94f7da15500-full.png"></a>
+    <div class="button1" ><a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html" > РЕСТОРАНЫ </a></div> 
+    
+    <div class="button2"><a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html" > НАПИТКИ </a></div> 
+    <div class="button3"> <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt_photo.html" > ФОТО </a></div> 
+    <div class="button4"><a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F,%20%D1%84%D0%BE%D1%82%D0%BE/projekt.html" > ОТЗЫВЫ </a></div> 
+    </div>
+    
+    <!-- НАЗВАНИЕ и МЕНЮ -->
+    
+    <div class="text5">  СВЕЖАК </div> 
+    <div class="text6"><p> 
+СМУЗИ «ПРИЯТНОСТЬ» - 70 ₴ _ _ _  _ _ _ _ _ <img  onclick="product1()" class="rere1" src="https://image.flaticon.com/icons/png/512/36/36762.png"> </p><p>
+СМУЗИ "РАДОСТЬ" - 80₴ _ _ _ _ _ _ _ _ _ _ _ _ <img  onclick="product2()" class="rere1" src="https://image.flaticon.com/icons/png/512/36/36762.png"></p><p> 
+АПЕЛЬСИНОВЫЙ ФРЕШ -  89 ₴ _ _ _ _ _ _ _ _  <img  onclick="product3()" class="rere1" src="https://image.flaticon.com/icons/png/512/36/36762.png">
+</p><p>
+СМУЗИ ЭКЗОТИЧНОСТЬ - 142 ₴ _ _ _ _ _ _ _ <img  onclick="product4()" class="rere1" src="https://image.flaticon.com/icons/png/512/36/36762.png">
+</p>
+</p><p> 
+СМУЗИ ЭКЗОТИЧНОСТЬ -
+79 ₴ _ _ _ _ _ _ _ _ _  <img  onclick="product5()" class="rere1" src="https://image.flaticon.com/icons/png/512/36/36762.png">
+</p> </p><p>
+ГРЕЧЕСКИЙ САЛАТ - 120 ₴ _ _ _ _ _ _ _ _ _ _<img  onclick="product6()" class="rere1" src="https://image.flaticon.com/icons/png/512/36/36762.png">
+</p></p><p>
+АПЕЛЬСИНОВЫЙ ФРЕШ -
+80 ₴ _ _ _ _ _ _ _ _ _<img  onclick="product7()" class="rere1" src="https://image.flaticon.com/icons/png/512/36/36762.png">
+</p>
+</p>  </div>
+    
+    <!-- Кнопки вперёд/назад и див МЕНЮ -->
+    
+    <div class="button9">
+    <a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%95%D0%B4%D0%B0/projekt_rolls.html" class="previous">« Previous</a>
+<a href="file:///C:/Users/Pavel/Documents/%D0%A1%D0%B0%D0%B9%D1%82%20%D1%88%D0%B0%D0%B3/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/projekt_bar.html" class="next">Next »</a> </div>
+    <div class="menu"> МЕНЮ </div>
+    
+    <!-- Описание ресторана -->
+
+  <div class="info1">СВЕЖАК - Фруктовая тарелка это прекрасное дополнение к праздничному столу. Празднуя корпоративы на ГРЕ либо в офисах - Мы с радостью украсим ваш праздничный стол - яркими, сочными, полезными фруктами. С любовью и заботой.</div> 
+    
+    <!-- FOOTER -->
+    
+   <div class="foot1"> 
+        <div class="foot1_foto"></div>
+        <div class=textt>
+         <div class="foot1_text"></div>
+          <div class="foot11_text"> О нас</div>
+         <div class="foot2_text">
+          <br><br>
+Городской рынок еды: 1200 м2, 13 кафе, 6 баров и сцена. Кухни всех направлений и напитки любого градуса. Ланчи и ужины, концерты, мастер-классы и дегустации. Открыт 19 июля 2017 года. Яркий туристический объект, любимый местными жителями в любое время года.
+        </div>
+          </div>
+        <div class=textt3>
+          
+          <div class="foot5_text">
+            
+            <div class="float1">
+              
+            <a href="https://www.instagram.com/cityfood.market/?hl=ru"><img class="insta" src="https://pngicon.ru/file/uploads/instagram.png" target="_blank"></a></div>
+            
+            <div class="float2">
+            <a href="https://www.facebook.com/kyivfood.market/"><img class="face" src="https://cdn.icon-icons.com/icons2/1099/PNG/512/1485482214-facebook_78681.png" target="_blank"></a>
+           </div>
+            
+            <div class="float3">
+          <a href="https://www.tripadvisor.ru/Restaurant_Review-g294474-d19088036-Reviews-Kyiv_Food_Market-Kiev.html"><img class="trip" src="https://www.dlt.travel/immagine/15919/tripadvisor.png" target="_blank"></a></div>
+           
+            <div class="float4">
+        <a href="https://web.telegram.org/#/im?p=@mctoday"><img class="telega" src="https://pngicon.ru/file/uploads/telegram.png" target="_blank"></a></div>
+            
+            <div class="float5">
+    <a href="https://www.youtube.com/watch?v=Orm92OHZ1N0"><img class="you" src="https://s1.iconbird.com/ico/2013/9/446/w512h5121380376600FlurryYouTubeAlt2.png" target="_blank"></a>
+            </div></div>
+          <div class="maps1">
+            <a class="map" title="maps" href="https://www.google.com/maps/place/Kyiv+Food+Market/@50.4422485,30.5445022,15z/data=!4m2!3m1!1s0x0:0xd70dd165b5e87b8c?sa=X&ved=2ahUKEwjfhfX1naHoAhXBxIsKHT6JAMIQ_BIwCnoECB4QCA" target="_blank"><img class="img6" src="https://cdn1.radikalno.ru/uploads/2020/6/22/f4535e6a756b025833039b7fdfe204e2-full.jpg"alt="Fringe"></a>
+          </div>
+          </div>
+        <div class=textt2>
+         <div class="foot3_text">Контакты</div>
+         <div class="foot4_text">
+            <div class="foto_karta"><img class="karta1" src="https://cdn1.radikalno.ru/uploads/2020/6/22/f4f23d80ae4ae215ba73be17711f9b4a-full.png"></div>
+          <div class="karta_text">Киев, Московская, 8а</div>
+           
+           <div class="foto_vremya"><img class="vremya1" src="https://cdn1.radikalno.ru/uploads/2020/6/22/15782acc4c2a32e89117e913d8165a43-full.png"></div>
+           <div class="vremya_text">ПН-ЧТ 11:00-23:00, ПТ-ВС 11:00-01:00</div>
+           
+           <div class="foto_tel"></div>
+           <img class="tell" src="https://cdn1.radikalno.ru/uploads/2020/6/22/29de1a85530f479ece413d1a14806683-full.png">
+            <div class="tel_text">
+             <a class="tel_text1" href="tel:+380958622708">+380 95 862 27 08</a><br>
+           </div>
+
+        </div>
+          </div>
+        
+             </div>
+         <!-- СТРЕЛКА НАВЕРХ -->
+      <div id="strelka">
+        
+        <a href="#top1">
+        <img id="strelka_img" src="https://cdn1.radikalno.ru/uploads/2020/6/22/59ed2d851e9fc404416f1786075baaef-full.png">
+        </a> 
+        
+        </div>
+    <script>
+   const anchors = document.querySelectorAll('a[href*="#top"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    
+    document.getElementById("top12").scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+    </script>
+    
+    </body></html>
